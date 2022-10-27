@@ -5,7 +5,7 @@ import "./ExpenseForm.css";
 
 const ExpenseForm = (props) => {
 
-  //for all three values let us create a separate state. Multy Statet approach
+  //for all three values let us create a separate state. Multy State approach
   const [enteredTitle, setEnteredTitle] = useState('');
   const [enteredAmount, setenteredAmount] = useState('');
   const [enteredDate, setEnteredDate] = useState('');
