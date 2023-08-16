@@ -90,6 +90,7 @@ const ExpenseForm = (props) => {
     setEnteredTitle('');
     setenteredAmount('');
     setEnteredDate('');
+    //this funtion passes data to upper component in the chain
     props.onSaveExpenseData(expenseData);
   };
 
