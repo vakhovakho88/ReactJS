@@ -200,3 +200,78 @@ Then, in the main component:
 ```javascript
 <ExpensesList items={filteredExpenses}/> 
 ```
+
+### Uncorected
+
+# Adding a Chart
+
+This representation captures the structure of the components and highlights the props being passed from parent to child at each level.
+
+- **App.js**
+  - **Expenses** (receives `expenses` prop from App.js)
+    - **ExpensesChart** (receives `filteredExpenses` prop from Expenses)
+      - **Chart** (receives `dataPoints` prop from ExpensesChart)
+        - **ChartBar** (receives `label`, `value`, `maxValue` props from Chart)
+
+---
+
+# Adding Dynamic Styles
+
+- We can add dynamic styles in JSX code.
+- Here's an example from `ChartBar.js`:
+
+```javascript
+// Calculate progress height
+let barFillHeight = Math.round((props.value / props.maxValue) * 100) + '%';
+
+return (
+    ...
+    <div className='chart-bar__fill' style={{height: barFillHeight}}></div>
+    ...
+);
+```
+
+
+
+
+
+Certainly! Below is the provided content in Markdown format:
+
+markdown
+Copy code
+# Adding a Chart
+
+This diagram depicts the relationship and structure of the components, emphasizing the props passed from parent to child at each level.
+
+- **App.js**
+  - **Expenses** (receives `expenses` prop from App.js)
+    - **ExpensesChart** (receives `filteredExpenses` prop from Expenses)
+      - **Chart** (receives `dataPoints` prop from ExpensesChart)
+        - **ChartBar** (receives `label`, `value`, `maxValue` props from Chart)
+
+---
+
+# Adding Dynamic Styles
+
+- We can add dynamic styles in JSX code.
+- Here's an example from `ChartBar.js`:
+
+```javascript
+// Calculate progress height
+let barFillHeight = Math.round((props.value / props.maxValue) * 100) + '%';
+
+return (
+    ...
+    <div className='chart-bar__fill' style={{height: barFillHeight}}></div>
+    ...
+);
+```
+* Explanation of `{{height: barFillHeight}}`:
+  - **Outer curly braces**: Indicate dynamic content in JSX.
+  - **Inner curly braces**: Denote a JavaScript object passed as a parameter.
+
+
+* `amount: +enteredAmount`
+The plus sign forces the value to convert to a number.
+
+
