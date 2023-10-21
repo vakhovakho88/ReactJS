@@ -237,7 +237,3 @@ return (
 
 * `amount: +enteredAmount`
 The plus sign forces the value to convert to a number.
-
-
-
-### Uncorected
