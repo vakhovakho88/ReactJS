@@ -1,0 +1,31 @@
+/* CSS */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: fit-content;
+    background-color: #f8f9fa; /* light gray */
+  }
+  
+
+
+
+ul li {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    background-color: #e9ecef; /* slightly darker gray */
+    color: #495057; /* dark gray */
+    transition: background-color 0.3s ease; /* transition for smooth color change */
+}
+
+ul li:hover {
+    background-color: #adb5bd; /* medium gray on hover */
+    cursor: pointer; /* changes the cursor to a hand on hover */
+}
+
+ul li:active {
+    background-color: #6c757d; /* dark gray on click */
+}

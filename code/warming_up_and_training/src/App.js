@@ -27,16 +27,16 @@ const peopleData = [
 
 function App() {
   return (
-    <div>
+    <ul>
       {/* Map over the peopleData array to render a list of paragraphs */}
       {peopleData.map((person, index) => (
         // Each paragraph has a unique 'key' attribute to help React efficiently update the list
-        <p key={index}>
+        <li key={index}>
            {/* Display the person's name and age */}
           Hi My Name is <b>{person.name}</b> and my age is <b>{person.age}</b>
-        </p>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 
