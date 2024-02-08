@@ -1,0 +1,17 @@
+tr {
+    border-bottom: 1px solid black; /* Add bottom border */
+}
+
+td {
+    padding: 16px;
+    text-align: center;
+   
+    border: none; /* Remove all borders */
+    border-bottom: 1px solid black; /* Add bottom border to each row */;
+
+    
+}
+tr:hover{
+    background-color: #cdcccb57;
+    cursor: pointer;
+}

@@ -1,0 +1,26 @@
+
+
+.round-table{
+
+
+    width: 100%;
+    /**
+     * Sets the border-collapse property to collapse, which removes the spacing between table cells.
+     */
+    border-collapse: collapse;
+}
+
+.container-round-table{
+    
+    background-color: #fafafb;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    /**
+     * Sets the box-sizing property to border-box.
+     * This ensures that the width and height of the element includes the padding and border, but not the margin.
+     */
+    box-sizing: border-box;
+}

@@ -1,0 +1,69 @@
+/* BEGIN: Minimalistic delete button with modern border */
+.delete-button {
+    background-color: #f44336;
+    border: none;
+    color: #FFFFFF;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.delete-button:hover {
+    color: #212121;
+    border-color: #f44336;
+    background-color: #ef0b0b7e;
+}
+
+.delete-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+/* END: Minimalistic delete button with modern border */
+
+
+
+
+/* CustomButton.js */
+.timer-button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #fafafb;
+    cursor: pointer;
+    padding: 15px 30px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #589ba4;
+    margin-right: 5px;
+  }
+  
+  .timer-button:hover {
+    background-color: #f9f9f9;
+    color: #000;
+  }
+
+
+
+
+
+
+  .clear-table-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to a hand icon */
+    font-size: 16px; /* Font size */
+    margin-top: 30px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+
+}
+
+.clear-table-btn:hover, .clear-table-btn:focus {
+    background-color: #45a049; /* Darker shade of green on hover/focus */
+    
+}

@@ -825,3 +825,5 @@ export default App;
 
 In the example, a ref (`playerNameRef`) is used to directly clear the input field when the "Set Name" button is clicked. While this approach can be convenient for simple tasks like clearing an input, it involves imperative code and should be used judiciously within the declarative React paradigm.
 # 11
+
+
