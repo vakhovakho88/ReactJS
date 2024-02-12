@@ -1,21 +1,49 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-//import city dashboard
-import CityDashboard from "./components/CityDashboard/CityDashboard";
+import styled from "styled-components";
 
+function Clock() {
+  const StyledButton = styled.button`
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 
-//import mock api
-import { fetchWeatherDataForCity } from "./utils/mockApi";
+  &:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+`;
 
-const WeatherDashboard = () => {
-  
+  // Use useState to store the current time
+  const [timer, setTimer] = useState(0);
 
-  // Example usage
-  fetchWeatherDataForCity("New York")
-    .then((data) => console.log(data))
-    .catch((error) => console.error(error.message));
+  useEffect(() => {
+    // Set up a timer to update the current time every second
+    const timerID = setInterval(() => tick(), 1000);
 
-  return <div>{/* Your component JSX goes here */}</div>;
-};
+    // Specify how to clean up after this effect:
+    return () => clearInterval(timerID);
+  }, []);
 
-export default WeatherDashboard;
+  const tick = () => {
+    // Update the current time
+    setTimer((timer) => timer + 1);
+  };
+
+  //console.log('timer', timer);
+
+  return (
+    <div>
+      <StyledButton>Hello</StyledButton>
+      <h2>Timer on: {timer}</h2>
+    </div>
+  );
+}
+
+export default Clock;

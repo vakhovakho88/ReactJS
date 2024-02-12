@@ -1,7 +1,15 @@
+// Function to generate a random temperature
+const generateRandomTemperature = () => {
+  const minTemperature = -20;
+  const maxTemperature = 40;
+  const randomTemperature = Math.floor(Math.random() * (maxTemperature - minTemperature + 1)) + minTemperature;
+  return `${randomTemperature}°C`;
+};
+
 // Mock weather data for 10 cities
 const weatherDataForCities = {
     "New York": {
-      temperature: "9°C",
+      temperature:  generateRandomTemperature,
       condition: "Cloudy",
       humidity: "60%",
       windSpeed: "16 km/h",
@@ -75,3 +83,4 @@ const weatherDataForCities = {
       }, 1000); // Simulate network request delay
     });
   };
+
