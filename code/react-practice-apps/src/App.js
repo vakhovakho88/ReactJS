@@ -1,5 +1,12 @@
 import "./App.css";
 
+//importing apps they are used to train react with little fragments
+
+import Counter from "./00_practice_fragments/01_counter_app/Counter.js";
+import CitySearch from "./00_practice_fragments/02_city_search/CitySearch.js";
+
+
+
 import AppUserCard from "./01_app_user_card/01_app_user_card.js";
 
 //import Stopwatch app
@@ -7,6 +14,7 @@ import Stopwatch from "./03_stopwatch/Stopwatch.js";
 
 //import Weather Dashboard app
 import WeatherDashboard from "./04_weather_dashboard/weather_dashboard.js";
+import Timer from "./03_stopwatch/components/Timer/Timer.js";
 
 
 function App() {
@@ -88,8 +96,14 @@ function App() {
 
   return (
 
+    //import of city search app
+    <CitySearch/>
+
+    //<Counter/>
+
+
     //import of weather dashboard app
-    <WeatherDashboard/>
+    // <WeatherDashboard/>
 
     //import of stopwatch app
     // <Stopwatch />
