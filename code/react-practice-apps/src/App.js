@@ -15,6 +15,7 @@ import Stopwatch from "./03_stopwatch/Stopwatch.js";
 //import Weather Dashboard app
 import WeatherDashboard from "./04_weather_dashboard/weather_dashboard.js";
 import Timer from "./03_stopwatch/components/Timer/Timer.js";
+import ToggleableContentBox from "./00_practice_fragments/03_toggleable_content_box/ToggleableContentBox.js";
 
 
 function App() {
@@ -95,9 +96,11 @@ function App() {
 
 
   return (
+    //import of toggleable content box
+    <ToggleableContentBox/>
 
     //import of city search app
-    <CitySearch/>
+    //<CitySearch/>
 
     //<Counter/>
 
