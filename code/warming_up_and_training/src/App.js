@@ -1,5 +1,16 @@
 import "./App.css";
 
+
+
+
+import TimerChallenge from "./Components/01_TimerChallenge";
+
+function App2() {
+  return (
+    <TimerChallenge targetTime={5}></TimerChallenge>
+  );
+}
+
 // Define an array of people data with their names and ages
 const peopleData = [
   { name: "John", age: 25 },
@@ -25,7 +36,7 @@ const peopleData = [
 ];
 
 
-function App() {
+function App1() {
   return (
     <ul>
       {/* Map over the peopleData array to render a list of paragraphs */}
@@ -40,4 +51,5 @@ function App() {
   );
 }
 
-export default App;
+
+export default App2;
