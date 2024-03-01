@@ -397,6 +397,7 @@ export default TimerChallenge;
 - **Conditional Rendering**: The button's onclick handler and text content change based on whether the timer has started, demonstrating a basic form of conditional rendering and interaction in React.
 
 
+# 01.03.2024
 
 ## Adding Challenges and Managing Timers
 
