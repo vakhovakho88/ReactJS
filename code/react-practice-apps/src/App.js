@@ -1,7 +1,8 @@
-import "./App.css";
+
+
+
 
 //importing apps they are used to train react with little fragments
-
 import Counter from "./00_practice_fragments/01_counter_app/Counter.js";
 import CitySearch from "./00_practice_fragments/02_city_search/CitySearch.js";
 
@@ -18,7 +19,22 @@ import Timer from "./03_stopwatch/components/Timer/Timer.js";
 import ToggleableContentBox from "./00_practice_fragments/03_toggleable_content_box/ToggleableContentBox.js";
 
 
-function App() {
+
+//project: Pommdoro Timer
+import PomodoroTimer from "./05_pomodoro_timer/PomodoroTimer.js";
+
+//project: Pommdoro Timer
+const App = () => { 
+  return (
+    <PomodoroTimer initialMinutes={1} initialSeconds={30}/>
+  );
+};
+
+
+
+
+
+function App1() {
   //App: 01_app_user_card
   // const users = [
   //   {
@@ -130,5 +146,3 @@ function App() {
 }
 
 export default App;
-
-// 
