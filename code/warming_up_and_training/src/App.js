@@ -5,6 +5,17 @@ import "./App.css";
 
 import TimerChallenge from "./Components/01_TimerChallenge";
 
+
+import LightToggle from "./Components/03_LightToggle";
+
+
+function App3(){
+  return (
+    <LightToggle></LightToggle>
+  );
+}
+
+
 function App2() {
   return (
     <TimerChallenge targetTime={5}></TimerChallenge>
@@ -52,4 +63,4 @@ function App1() {
 }
 
 
-export default App2;
+export default App3;
