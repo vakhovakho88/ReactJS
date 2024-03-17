@@ -1,25 +1,23 @@
 import "./App.css";
 
-
-
-
 import TimerChallenge from "./Components/01_TimerChallenge";
 
-
 import LightToggle from "./Components/03_LightToggle";
+import AuthForm from "./Components/04_AuthForm";
 
 
-function App3(){
-  return (
-    <LightToggle></LightToggle>
-  );
+
+function App4(){
+  return <AuthForm/>
 }
 
 
+function App3() {
+  return <LightToggle></LightToggle>;
+}
+
 function App2() {
-  return (
-    <TimerChallenge targetTime={5}></TimerChallenge>
-  );
+  return <TimerChallenge targetTime={5}></TimerChallenge>;
 }
 
 // Define an array of people data with their names and ages
@@ -46,7 +44,6 @@ const peopleData = [
   { name: "Charlotte", age: 31 },
 ];
 
-
 function App1() {
   return (
     <ul>
@@ -54,7 +51,7 @@ function App1() {
       {peopleData.map((person, index) => (
         // Each paragraph has a unique 'key' attribute to help React efficiently update the list
         <li key={index}>
-           {/* Display the person's name and age */}
+          {/* Display the person's name and age */}
           Hi My Name is <b>{person.name}</b> and my age is <b>{person.age}</b>
         </li>
       ))}
@@ -62,5 +59,4 @@ function App1() {
   );
 }
 
-
-export default App3;
+export default App4;
