@@ -776,5 +776,4 @@ export default CountdownTimer;
 4. **clearInterval**: Ensures the interval is cleared to prevent memory leaks or errors when the component unmounts or the countdown reaches zero.
 5. **Conditionally Rendering**: Displays "Time's up!" when the countdown reaches zero.
 
-This example provides a straightforward implementation of a countdown timer in React, demonstrating the use of hooks (`useState` and `useEffect`) and `setInterval` for basic state management and side effects handling.
-
+This example provides a straightforward implementation of a countdown timer in React, demonstrating the use of hooks (`useState` and `useEffect`) and `setInterval` for basic state management and side effects handling
