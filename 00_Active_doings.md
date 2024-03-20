@@ -1,5 +1,9 @@
 Lectures:
 Modal - Dialogs, the last complete Example should be disciussed!. 
+Started: 
+D:\LEARNING_AND_PROJECTS\Udemy\ReactJs\7_practice_project_insights.md
+
+
 
 Demo Project Refs....
 
